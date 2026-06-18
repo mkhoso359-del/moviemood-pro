@@ -1,0 +1,117 @@
+.movie-details-backdrop {
+  position: relative;
+  width: 100%;
+  height: 46vh;
+  min-height: 320px;
+  max-height: 520px;
+  overflow: hidden;
+}
+
+.movie-details-backdrop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-details-backdrop-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(6, 6, 6, 0.3) 0%, var(--bg-black) 100%);
+}
+
+.movie-details-body {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-top: -120px;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.movie-details-poster {
+  width: 220px;
+  flex-shrink: 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 2 / 3;
+  box-shadow: var(--shadow-card);
+}
+
+@media (max-width: 600px) {
+  .movie-details-poster {
+    width: 150px;
+  }
+}
+
+.movie-details-info {
+  flex: 1;
+  min-width: 240px;
+  padding-top: 130px;
+}
+
+@media (max-width: 600px) {
+  .movie-details-info {
+    padding-top: 20px;
+  }
+}
+
+.movie-details-title {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .movie-details-title {
+    font-size: 2.8rem;
+  }
+}
+
+.movie-details-meta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  margin-bottom: 16px;
+}
+
+.movie-details-rating {
+  color: #ffd54f;
+  font-weight: 700;
+}
+
+.movie-details-genres {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.movie-details-genre-pill {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--glass-border);
+}
+
+.movie-details-overview {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.96rem;
+  margin-bottom: 28px;
+  max-width: 700px;
+}
+
+.movie-details-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.movie-details-actions .is-fav {
+  background: rgba(229, 9, 20, 0.18);
+  color: var(--red-bright);
+}

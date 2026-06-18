@@ -1,0 +1,26 @@
+.state-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  padding: 48px 24px;
+  border-radius: var(--radius-lg);
+  margin: 24px auto;
+  max-width: 480px;
+}
+
+.state-icon {
+  font-size: 2.4rem;
+}
+
+.state-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.state-message {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}

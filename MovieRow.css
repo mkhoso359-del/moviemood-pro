@@ -1,0 +1,48 @@
+.movie-row {
+  margin-bottom: 40px;
+}
+
+.movie-row-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 4px;
+}
+
+.movie-row-arrows {
+  display: none;
+  gap: 8px;
+}
+
+@media (min-width: 768px) {
+  .movie-row-arrows {
+    display: flex;
+  }
+}
+
+.movie-row-scroller {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  padding: 4px 4px 12px;
+  -ms-overflow-style: none;
+  scrollbar-width: thin;
+}
+
+.movie-row-item {
+  flex: 0 0 140px;
+  scroll-snap-align: start;
+}
+
+@media (min-width: 600px) {
+  .movie-row-item {
+    flex-basis: 170px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .movie-row-item {
+    flex-basis: 200px;
+  }
+}
